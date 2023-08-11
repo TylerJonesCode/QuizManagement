@@ -1,0 +1,30 @@
+.root {
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: cyan;
+    width: 100%;
+    justify-content: center;
+}
+
+nav {
+    width: 75%;
+    background-color: blueviolet;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+}
