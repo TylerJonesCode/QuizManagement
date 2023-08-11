@@ -6,7 +6,7 @@ import Root from "./routes/Root"
 import ErrorPage from "./routes/ErrorPage.jsx"
 import Test from "./routes/Test"
 import Login from "./routes/Login"
-import Signup from "./routes/Signup"
+import Register from "./routes/Register"
 import CreateTest from "./routes/CreateTest"
 import TestDashboard from "./routes/TestDashboard"
 import Grades from "./routes/Grades"
@@ -29,8 +29,8 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "signup",
-        element: <Signup />,
+        path: "register",
+        element: <Register />,
       },
       {
         path: "test/create",

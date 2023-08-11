@@ -1,7 +1,12 @@
+import { useState } from 'react'
 const Test = () => {
-  console.log('Test is loaded')
+  const [num, setNum] = useState(0)
+  const [val] = [1, 2]
+  console.log(val)
   return (
-    <div>test</div>
+    <div>
+      <button type="button" onClick={()=> setNum(num+1)}> Test {num}</button>
+    </div>
   )
 }
 
