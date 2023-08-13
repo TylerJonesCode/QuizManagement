@@ -3,17 +3,20 @@
 }
 
 
-header {
+nav-bar {
     display: flex;
     flex-direction: row;
-    background-color: cyan;
-    width: 100%;
+    background-color: lightgray;
+    width: 80%;
+    position: relative;
+    left: 10%;
     justify-content: center;
+    border-radius: 10px;
 }
 
 nav {
-    width: 75%;
-    background-color: blueviolet;
+    width: 10%;
+    height: 100%;
 }
 
 ul {

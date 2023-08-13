@@ -9,7 +9,7 @@ export default function Root() {
 
     useEffect(() => {
         if (cookies['user'] === undefined && window.location.pathname != "/login" && window.location.pathname != "/register"){
-            console.log(navigate("/login"))
+            navigate("/login")
         }
 
     }, [])
@@ -20,7 +20,7 @@ export default function Root() {
         <nav>
             <ul>
                 <li>
-                    <Link to="test">Link1</Link>
+                    <Link to="Classes">Link1</Link>
                 </li>
                 <li>
                     <Link to="">Link2</Link>
