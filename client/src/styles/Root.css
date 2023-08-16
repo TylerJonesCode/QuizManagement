@@ -3,10 +3,10 @@
 }
 
 
-nav-bar {
+aside {
     display: flex;
-    flex-direction: row;
-    background-color: lightgray;
+    flex-direction: column;
+    background-color: orange;
     width: 80%;
     position: relative;
     left: 10%;

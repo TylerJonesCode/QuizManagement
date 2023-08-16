@@ -11,16 +11,19 @@ export default function Root() {
         if (cookies['user'] === undefined && window.location.pathname != "/login" && window.location.pathname != "/register"){
             navigate("/login")
         }
+        else{
+            //get classes
+        }
 
     }, [])
     
     return( 
     <>
     <header>
-        <nav>
+        <aside>
             <ul>
                 <li>
-                    <Link to="Classes">Link1</Link>
+                    <Link to="/test">Link1</Link>
                 </li>
                 <li>
                     <Link to="">Link2</Link>
@@ -29,7 +32,7 @@ export default function Root() {
                     <Link to="">Link3</Link>
                 </li>
             </ul>
-        </nav>
+        </aside>
     </header>
     
     <div>Root</div>
