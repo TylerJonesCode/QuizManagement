@@ -9,7 +9,6 @@ app.use(cors(corsOptions))
 app.use(express.json())
 
 
-app.use('/', require('./routes/root'))
 /*
 app.use('/user', require('./routes/userRoutes'))
 
