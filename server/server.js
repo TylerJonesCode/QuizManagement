@@ -9,9 +9,9 @@ app.use(cors(corsOptions))
 app.use(express.json())
 
 
-
-app.use('/user', require('./routes/userRoutes'))
 /*
+app.use('/user', require('./routes/userRoutes'))
+
 app.use('/class', require('./routes/classRoutes'))
 
 app.use('/user/test', (req, res) => {
@@ -40,6 +40,21 @@ app.use((req, res, next) =>{
 app.all('*', (req, res) => {
     res.status(404)
     res.type('txt').send('404 error, requested resource not found')
+})
+
+//Error handler
+app.use((err, req, res, next) =>{
+    console.log(err)
+
+    if(res.statusCode){
+        res.json({ error: err.message})
+    }
+    else{
+        res.status(500)
+
+        res.json({ error: "Internal server error has occurred" })
+    }
+    
 })
 
 app.listen(3000, () => {

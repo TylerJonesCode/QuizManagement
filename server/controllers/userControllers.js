@@ -1,5 +1,6 @@
 const User = require('../models/user')
 const asyncHandler = require('express-async-handler')
+const argon2 = require('argon2')
 
 const getUser = asyncHandler((req, res) => {
     res.send('getUser')
