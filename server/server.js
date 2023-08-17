@@ -9,9 +9,9 @@ app.use(cors(corsOptions))
 app.use(express.json())
 
 
-/*
-app.use('/user', require('./routes/userRoutes'))
 
+app.use('/user', require('./routes/userRoutes'))
+/*
 app.use('/class', require('./routes/classRoutes'))
 
 app.use('/user/test', (req, res) => {

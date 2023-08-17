@@ -9,7 +9,7 @@ export default function Root() {
 
     useEffect(() => {
         if (cookies['user'] === undefined && window.location.pathname != "/login" && window.location.pathname != "/register"){
-            navigate("/login")
+            //navigate("/login")
         }
         else{
             //get classes
@@ -34,8 +34,6 @@ export default function Root() {
             </ul>
         </aside>
     </header>
-    
-    <div>Root</div>
     <Outlet />
     </>)
 }
